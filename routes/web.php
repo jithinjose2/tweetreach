@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'TweetReachController@tweetReach');
+Route::get('/', 'TweetReachController@show');
+
+Route::get('/reach', 'TweetReachController@getReach');

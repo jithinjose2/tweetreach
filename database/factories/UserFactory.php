@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(TweetReach\User::class, function (Faker $faker) {
+$factory->define(TweetReach\Tweet::class, function (Faker $faker) {
     static $password;
 
     return [

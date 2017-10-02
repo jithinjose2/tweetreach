@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => TweetReach\User::class,
+        'model' => TweetReach\Tweet::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

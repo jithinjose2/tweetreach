@@ -2,7 +2,7 @@
 
 namespace TweetReach\Http\Controllers\Auth;
 
-use TweetReach\User;
+use TweetReach\Tweet;
 use TweetReach\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -58,11 +58,11 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \TweetReach\User
+     * @return \TweetReach\Tweet
      */
     protected function create(array $data)
     {
-        return User::create([
+        return Tweet::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
